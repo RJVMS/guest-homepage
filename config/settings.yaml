@@ -27,7 +27,7 @@ providers:
 layout:
   Top:
     style: row
-    columns: 3
+    columns: 2
     header: false
     Date:
       header: true
@@ -35,17 +35,6 @@ layout:
       header: true
       style: row
       columns: 2    
-    Monitoring:
-      header: true
-
-
-  Torrent:
-    header: false
-    style: row
   Stream:
     style: row
-    header: false
-  OVH Cloud:
-    style: row
-    columns: 5
     header: false
