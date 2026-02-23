@@ -3,7 +3,7 @@ services:
     image: ghcr.io/gethomepage/homepage:latest
     container_name: guest-homepage
     ports:
-      - 3000:3100
+      - 3100:3000
     volumes:
       - /home/rjvms/docker/guest-homepage/config:/app/config # Make sure your local config directory exists
       - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
