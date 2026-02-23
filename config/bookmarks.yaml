@@ -1,0 +1,23 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+- OVH Cloud:
+    - Assetto Corsa Server:
+      - href: https://acsm.rj-web.org
+        icon: https://files.rj-web.org/api/public/dl/dhwKHsCM?inline=true
+        siteMonitor: https://acsm.rj-web.org
+        description: ""
+    - Filebrowser:
+      - href: https://files.rj-web.org
+        icon: https://files.rj-web.org/api/public/dl/dhwKHsCM?inline=true
+        sitemonitor: https://files.rj-web.org
+        description: ""
+    - Ownfoil:
+      - href: https://ownfoil.rj-web.org
+        icon: https://files.rj-web.org/api/public/dl/dhwKHsCM?inline=true
+        sitemonitor: https://ownfoil.rj-web.org
+        description: ""
+    - Profilarr:
+      - href: https://profilarr.rj-web.org
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/profilarr.png
+        sitemonitor: https://profilarr.rj-web.org

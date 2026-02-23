@@ -1,0 +1,65 @@
+- Top:
+  - Date:
+      - Calendar:
+          widget: 
+              type: calendar
+              view: agenda
+              showTime: true
+              maxEvents: 6
+              integrations: # optional
+              - type: sonarr # active widget type that is currently enabled on homepage - possible values: radarr, sonarr, lidarr, readarr, ical
+                service_group: Media Apps  # group name where widget exists
+                service_name: Sonarr # service name for that widget
+                color: blue # optional - defaults to pre-defined color for the service (teal for sonarr)
+                baseUrl: https://rjvms.terra.usbx.me/sonarr # optional - adds links to sonarr/radarr pages
+                params: # optional - additional params for the service
+                  unmonitored: true
+                  showName: true
+
+
+
+
+  - Media Apps:
+    - Sonarr:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/sonarr.png
+        siteMonitor: https://rjvms.terra.usbx.me/sonarr/
+        href: https://rjvms.terra.usbx.me/sonarr/
+        widget:
+            type: sonarr
+            url: https://rjvms.terra.usbx.me/sonarr/
+            key: {{HOMEPAGE_VAR_SONARR_API_KEY}}
+    - Radarr:
+        siteMonitor: https://rjvms.terra.usbx.me/radarr
+        href: https://rjvms.terra.usbx.me/radarr
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/radarr.png
+        widget:
+            type: radarr
+            url: https://rjvms.terra.usbx.me/radarr
+            key: {{HOMEPAGE_VAR_RADARR_API_KEY}}   
+
+
+
+
+
+
+
+- Stream:
+  - Jellyfin:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/jellyfin.png
+        siteMonitor: https://rjvms.terra.usbx.me/jellyfin/web/#/home.html
+        href: https://rjvms.terra.usbx.me/jellyfin
+        widget:
+          fields: ["movies", "series"]
+          type: jellyfin
+          url: https://rjvms.terra.usbx.me/jellyfin
+          key: {{HOMEPAGE_VAR_JELLYFIN_API_KEY}}
+          enableBlocks: true # optional, defaults to false
+          enableNowPlaying: true # optional, defaults to true
+          enableUser: true # optional, defaults to false
+          enableMediaControl: false # optional, defaults to true
+          showEpisodeNumber: true # optional, defaults to false
+          expandOneStreamToTwoRows: false # optional, defaults to true   
+
+
+
+# Bookmarks
