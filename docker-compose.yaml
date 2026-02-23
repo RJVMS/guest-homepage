@@ -5,9 +5,10 @@ services:
     ports:
       - 3100:3000
     volumes:
-      - /home/rjvms/docker/guest_homepage/config:/app/config # Make sure your local config directory exists
+      - ./guest-homepage/config:/app/config # Make sure your local config directory exists
       - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
     environment:
       HOMEPAGE_ALLOWED_HOSTS: home.rj-web.org,51.91.79.32:3100 # required, may need port. See gethomepage.dev/installation/#homepage_allowed_hosts
+
 
 
